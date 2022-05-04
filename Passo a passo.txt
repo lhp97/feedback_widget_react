@@ -1,0 +1,56 @@
+** Projeto - Feedback Widget **
+
+1. Instalação VITE:
+- Na pasta do projeto executar o comando: npm create vite@latest
+- inserir um nome para o projeto
+- selecionar react
+- selecionar react-ts (react com typscript)
+obs: O Vite tem como função converter o código para um formato para poder ser utilizado em todos os navegadores.
+
+2. Abrir o Projeto criado no VsCode
+- Comando code . na pasta do projeto
+
+3. Instalar as dependencias do projeto:
+- no terminal do VS, executar o comando: npm install 
+- dar um reload na pagina ctrl + p digitar >reload
+
+4. Remover arquivos dentro do src, deixando apenas:
+- App.tsx, main.tsx e vite-env.d.ts
+
+5. Limpar e remover imports:
+- No arquivo App.tsx, remover todos os imports
+- Ainda no App.tsx, remover todo o conteudo da function App(){}
+- testar escrevendo dentro da função um return com html normal (Hello World)
+
+6. Executar o Projeto
+- comando npm run dev
+
+* Component do React: 
+- Função que retornar html
+- deve sempre manter a 1ª letra maiuscula 
+
+7. Configurando Tailwindcss
+https://tailwindcss.com/docs/installation
+
+usar comando npx tailwindcss init -p para instalar o tailwind junto com a ferramenta postcss que serve para integrar de formar automatica os arquivos css da aplicação, recompilando os arquivos css de uma maneira que o browser entenda
+
+criar dentro de src arquivo: global.css e adicionar:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Importar o arquivo global.css dentro do arquivo main.tsx
+
+8. Criar pasta "components" dentro de src para adicionar todos os components da aplicação react
+- dentro da pasta criar aquivo Widget.tsx para ser o component do Widget
+
+9 Instalar biblioteca phosphor-react para utilização de Icones
+https://phosphoricons.com/
+- npm install phosphor-react
+
+
+* Bibliotecas de acessibilidade:
+- reakit ou ariakit -> tras elementos acessiveis para dentro do React (popover)
+- radix-ui (popover)
+- headlessui.dev integrada com tailwindcss -> usada no curso https://headlessui.dev/
+-
